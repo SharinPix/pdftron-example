@@ -1,0 +1,7 @@
+{
+  "name": "pdftron-example",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
