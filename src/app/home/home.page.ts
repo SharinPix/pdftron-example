@@ -14,9 +14,10 @@ export class HomePage implements AfterViewInit{
   ngAfterViewInit() {
     WebViewer({
       path: '../../wv-resources/lib',
-      initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/PDFTRON_about.pdf'
+      initialDoc: 'https://pdf-test-sharinpix.s3.eu-west-3.amazonaws.com/example2.pdf'
     }, this.viewer.nativeElement).then((instance) => {
       // Call APIs here
+      instance.setFitMode(instance.FitMode.FitWidth);
     })
   }
 
